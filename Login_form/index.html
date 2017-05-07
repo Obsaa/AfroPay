@@ -1,44 +1,67 @@
 <!DOCTYPE html>
 <html >
-<head>
-  <meta charset="UTF-8">
-  <title>AfroPay</title>
-  <link rel="stylesheet" href="css/reset.min.css">
-  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
-  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Montserrat:400,700'>
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <head>
+    
+    <meta charset="UTF-8">
 
-<body>
-  
-<div class="container">
-  <div class="info">
-    <h1 style="font-weight: bold;">AfroPay</h1><span>Made with <i class="fa fa-globe"></i> in Mind by <a targethref="http://GetResolveIT.com">ResolveIT</a></span>
-  </div>
-</div>
-<div class="form">
-  <div class="thumbnail"><img src="img/bank_icon_5.png"/></div>
-  <form class="register-form">
-    <input type="text" placeholder="name"/>
-    <input type="password" placeholder="password"/>
-    <input type="text" placeholder="email address"/>
-    <button>create</button>
-    <p class="message">Already registered? <a href="#">Sign In</a></p>
-  </form>
-  <form class="login-form">
-    <input type="text" placeholder="username"/>
-    <input type="password" placeholder="password"/>
-    <button>login</button>
-    <p class="message">Not registered? <a href="#">Create an account</a></p>
-  </form>
-</div>
-<video id="video" autoplay="autoplay" loop="loop" poster="polina.jpg">
-  <source src="http://andytran.me/A%20peaceful%20nature%20timelapse%20video.mp4" type="video/mp4"/>
-</video>
-  <script src='js/jquery.min.js'></script>
+    <!--TITLE-->
+    <title>AfroPAY</title>
 
+    <!--favicons-->
+    <link rel="icon" href="img/money.png" type="image/x-icon" />
+
+    <!--stylesheet-->
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--font stylesheet-->
+    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
+    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Montserrat:400,700'>
+
+    <!--fontawesome loader-->
+    <link rel='stylesheet prefetch' href='css/font-awesome.min.css'>
+
+    <!--jQuery v3.2.1 Minified-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="info">
+        <h1 style="font-weight: bold;">Afro<span style="font-size: 40px; font-weight: normal; font-style: italic;">PAY</span></h1><span>Made with <i class="fa fa-globe"></i> in mind by <a target="_blank" href="http://GetResolveIT.com">ResolveIT</a></span>
+      </div>
+    </div>
+
+    <div class="form">
+      <div class="thumbnail"><img src="img/bank_icon_5.png"/></div>
+
+      <form class="register-form">
+        <input type="text" class="form-control" placeholder="first name*"/>
+        <input type="text" class="form-control" placeholder="last name*"/>
+        <input type="password" class="form-control" name="password" placeholder="password*"/>
+        <input type="password" class="form-control" name="cfmPassword" placeholder="password*"/>
+        <input type="text" class="form-control" placeholder="email address*"/>
+        <input type="text" class="form-control" placeholder="phone number*"/>
+        <button type="submit" value="submit">create</button>
+        <p class="message">Already registered? <a href="#">Sign In</a></p>
+      </form>
+
+      <form class="login-form">
+        <input type="text" placeholder="username"/>
+        <input type="password" placeholder="password"/>
+        <button>login</button>
+        <p class="message">Not registered? <a href="#">Create an account</a></p>
+      </form>
+      <script>
+        $("#commentForm").validate();
+      </script>
+    </div>
+
+    <!--Site JQuery-->
     <script src="js/index.js"></script>
 
-</body>
+  </body>
 </html>
